@@ -1,5 +1,13 @@
-#below both ways you can import the logger module
-# from src.cnnClassifier import logger
 from cnnClassifier import logger
+from cnnClassifier.pipeline.st_01_data_ingestion import DataIngestionTrainingPipeline
 
-logger.info("welcome to the cnnClassifier")
+STAGE_NAME = "Data Ingedestion Stage"
+
+try:
+    logger.info(f">>>>>>>>>>>>>>>Stage {STAGE_NAME} started successfully<<<<<<<<<<<<<")
+    obj = DataIngestionTrainingPipeline()
+    obj.main()
+    logger.info(f">>>>>>>Stage {STAGE_NAME} completed successfully<<<<<<<<\n\n********************")
+except Exception as e:
+    logger.exception(e)
+    raise e
