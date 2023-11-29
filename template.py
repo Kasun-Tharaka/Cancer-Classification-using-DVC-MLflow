@@ -5,7 +5,7 @@ import logging
 #logging save with asctime stamp and logging message
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "ChestCanserClassification"
+project_name = "cnnClassifier"
 
 list_of_files = [
     ".github/workflow/.gitkeep",

@@ -8,9 +8,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "Checs_tCanser_Classification_Project"
+REPO_NAME = "Checs_Canser_Classification_Project"
 AUTHOR_USER_NAME = "Kasun-Tharaka"
-SRC_REPO = "ChestCanserClassification"
+SRC_REPO = "cnnClassifier"
 AUTHOR_EMAIL = "k.tharakadharmapriya@gmail.com"
 
 
